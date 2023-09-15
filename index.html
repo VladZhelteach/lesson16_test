@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/script.js"></script>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Підключаємо файл Javascript з самописними скриптами -->
+  <title>Final project</title>
+</head>
+<body onload="get_api(1);">
+<div class="wrapper">
+  <header class="container">
+    <nav class="top_menu_block">
+      <ul class="top_menu">
+        <li class="top_menu_item"><a href="#about_me">ABOUT ME</a></li>
+        <li class="top_menu_item"><a href="#skills">SKILLS</a></li>
+        <!--<li class="top_menu_item"><a href="#portfolio">PORTFOLIO</a></li>-->
+        <li class="top_menu_item"><a href="#sevices">SERVICES</a></li>
+        <li class="top_menu_item"><a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+    <div class="title_block">
+      <span class="first_line">I’m a</span>
+      <h1 class="designer">SOFTWARE<br>DEVELOPER</h1>
+      <div class="contact_me_block">
+        <a class="contact_me_btn" href="#contact">CONTACT ME</a>
+      </div>
+    </div>
+  </header>
+  <main class="container">
+    <div class="about_block">
+      <a name="about_me"></a>
+      <h2 class="title">About Me</h2>
+      <div class="about_inner_block">
+        <div class="image_block"><img src="img/photo.jpg" alt="" class="photo"></div>
+        <div class="basic_info_block">
+          
+          <div class="row_1_column">
+            <h3 class="sub_title">My name is <span id="api_name">Vlad Zhel</span></h3>
+            <span class="basic_info_deskr" id="deskr">Text here</span>
+          </div>
+          <div class="row_2_columns">
+            <span class="small_title">Name/Surname</span>
+            <span class="most_text" id="api_name2">Vlad</span>
+          </div>
+          <div class="row_2_columns">
+            <span class="small_title">Phones</span>
+            <span class="most_text" id="api_phone">Vlad</span>
+          </div>
+          <div class="row_2_columns">
+            <span class="small_title">Address</span>
+            <span class="most_text" id="api_addr">Vlad</span>
+          </div>
+          <div class="row_2_columns">
+            <span class="small_title">E-mail</span>
+            <a class="most_text" href="#" id="api_email">Vlad</a>
+          </div>
+          <div class="row_1_column">
+            <span class="small_title">Education</span>
+            <span class="most_text" id="api_edu">Vlad</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="skills_block">
+      <a name="skills"></a>
+      <h2 class="title">Skills</h2>
+      <div class="skills_list" id="skill_list">
+        <div class="skill_name">C++</div>
+        <div class="skill_rate">90</div>
+        <div class="skill_name">Javascript</div>
+        <div class="skill_rate">90</div>
+      </div>
+    </div>
+    <!--<div class="portfolio_block">
+      <a name="portfolio"></a>
+      <h2 class="title">Portfolio</h2>
+      <div class="portfolio_menu"></div>
+      <div class="portfolio_icons"></div>
+    </div>-->
+    <div class="services_block">
+      <a name="services"></a>
+      <h2 class="title">Services</h2>
+      <div class="cards" id="cards_list">
+        <div class="card">
+          <img src="" alt="">
+          <h3 class="sub_title">Title</h3>
+          <p class="most_text">Text</p>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <h3 class="sub_title">Title</h3>
+          <p class="most_text">Text</p>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <h3 class="sub_title">Title</h3>
+          <p class="most_text">Text</p>
+        </div>
+        <div class="card">
+          <img src="" alt="">
+          <h3 class="sub_title">Title</h3>
+          <p class="most_text">Text</p>
+        </div>
+      </div>
+    </div>
+  </main>
+</div>
+<div class="wrapper2">
+  <footer class="container">
+    <div class="contact_block">
+      <a name="contact"></a>
+      <h2 class="title2">Contact With Me</h2>
+      <div class="contact_footer">
+        <div class="contacts_me">
+          
+          <div class="contacts_line">
+            <span class="contact_title">Phone:</span> <span id="api_phone2" class="contact_data">+374 99 977337</span>
+          </div>
+          <div class="contacts_line">
+            <span class="contact_title">Address:</span> <span id="api_addr2" class="contact_data">Armenia, Yerevan</span>
+          </div>
+          <div class="contacts_line">
+            <span class="contact_title">Write us now:</span> <a id="api_email2" class="contact_data">tik.mnac7@mail.ru</a>
+          </div>
+          
+        </div>
+        <form class="contacts_form" action="" method="post" id="send_req">
+          <div class="row_1_column">Drop me a line</div>
+          <div class="row_2_columns">
+            <span>Name:*</span>
+            <input type="text" class="contact_input" name="send_name" id="send_name">
+            <input type="hidden" class="contact_input" name="send_stud" id="send_stud" value="1">
+          </div>
+          <div class="row_2_columns">
+            <span>Email:*</span>
+            <input type="text" class="contact_input" name="send_email" id="send_email">
+          </div>
+          <div class="row_1_column">
+            <span>Your message:*</span>
+            <input type="text" class="contact_input" name="send_message" id="send_message">
+          </div>
+          <div class="row_2_columns">
+            <!--<input type="submit" class="contact_button" name="" id="">-->
+            <input type="button" class="contact_button" id="contact_button" value="Відправити" onclick="send_mess();">
+          </div>
+          <div class="row_2_columns">
+            <!--<input type="reset" class="contact_button" name="" id="">-->
+          </div>
+        </form>
+      </div>
+    </div>
+  </footer>
+</div>
+</body>
+</html>
